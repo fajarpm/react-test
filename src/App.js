@@ -5,11 +5,13 @@ import ListF from './components/ListF'
 import { Routes, Route } from 'react-router-dom'
 import Hook from './components/Hook'
 import MyForm from './components/Form'
+import ListAddFn from './components/ListAddFn';
 
 function App() {
   return (
     <Routes>
       <Route path='list' element={<List />}></Route>
+      <Route path='list-fn' element={<ListAddFn />}></Route>
       <Route path='list-f' element={<ListF />}></Route>
       <Route path='hook' element={<Hook />}></Route>
       <Route path='form' element={<MyForm />}></Route>
