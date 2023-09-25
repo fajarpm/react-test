@@ -8,6 +8,7 @@ import MyForm from './components/Form'
 import ListAddFn from './components/ListAddFn';
 import { Master } from './modules/layout/Master';
 import { RouteWithLayout } from './modules/layout/RouteWithLayout';
+import Example from 'components/Example';
 
 function App() {
   const BrowserRoutes=createBrowserRouter([
@@ -17,7 +18,7 @@ function App() {
       children:[
         {
           path:"/",
-          element:<List />
+          element:<Example />
         },
         {
           path:"list-fn",
